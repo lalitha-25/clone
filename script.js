@@ -8,5 +8,10 @@ filter.forEach(button => {
     });
 });
 
-var chatlist=document.getElementById("chat-item");
-chatlist.forEach()
+const addBtn = document.querySelector(".chat-input span");
+const attachments = document.getElementById("attachments");
+
+addBtn.addEventListener("click", () => {
+  attachments.style.display =
+    attachments.style.display === "block" ? "none" : "block";
+});
